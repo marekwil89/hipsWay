@@ -693,6 +693,7 @@ nav {
   bottom: 0px;
   z-index: 4000; }
   .pre-loader .loader {
+    z-index: 4200;
     width: 100px;
     height: 100px; }
 

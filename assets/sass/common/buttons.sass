@@ -1,0 +1,40 @@
+.btn
+  z-index: 99
+  margin: 15px auto
+  width: 300px
+  padding: 10px 10px
+  font-size: $medium
+  font-weight: 700
+  background: none
+  transition: 0.3s all
+  display: block
+  
+  &:focus, &:active
+    border: none
+    outline: none
+
+  &.btn-main
+    color: $main-color
+    border: $main-color 2px solid
+
+    &:hover
+      text-shadow
+      cursor: pointer
+      background: $main-color
+      color: $light-color
+      box-shadow: 8px 6px 5px 0px rgba(50, 50, 50, 0.75)
+
+  &.btn-dark
+    color: $dark-color
+    border: $dark-color 2px solid
+
+    &:hover
+      text-shadow
+      cursor: pointer
+      background: $dark-color
+      color: $light-color
+      box-shadow: 8px 6px 5px 0px rgba(50, 50, 50, 0.75)
+
+@media screen and (max-width: 400px)
+  .btn
+    width: 90%

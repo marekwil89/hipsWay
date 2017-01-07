@@ -1,0 +1,81 @@
+.modal
+  width: 100%
+  position: fixed
+  top: 0px
+  bottom: 0px
+  right: -900px
+  left: 1800px
+  z-index: 999
+  display: flex
+  opacity: 0
+  
+  &.opened
+    animation-name: show
+    animation-fill-mode: forwards
+    animation-duration: 1s
+
+  .modal-title
+    letter-spacing: $space
+    font-size: $large
+    text-align: center
+
+    &:before
+      content: '/ '
+      color: $main-color
+
+  .modal-container
+    position: relative
+    background: $light-color
+    background-image: url('../images/vector.png')
+    background-size: cover
+    width: 800px
+    margin: 0px auto
+    padding: 0px 10px
+    overflow-x: auto
+
+    .close
+      position: absolute
+      top: 3px
+      right: 3px
+
+      &:hover
+        cursor: pointer
+    
+    figure
+      margin: $small auto
+      width: 50%
+      
+      .modal-img
+        border-radius: 10px
+        width: 100%
+        margin: 0px auto
+        height: auto
+        box-shadow: 10px 10px 5px $gray-color
+
+    .modal-date
+      font-size: $small
+      font-weight: 700
+      color: $dark-color
+      letter-spacing: $space
+
+    .modal-descr
+      letter-spacing: $space
+      font-size: $small
+      word-break: break-all
+      line-height: 120%
+      
+      text-align: justify
+
+      &:before
+        content: '...'
+      
+@media screen and (max-width: 600px)
+
+  .modal
+    .modal-title
+      font-size: $medium
+      
+    .modal-container
+      figure
+        width: 90%
+      

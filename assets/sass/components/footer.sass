@@ -1,0 +1,54 @@
+.footer-box
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+  background-color: $dark-color
+  color: $light-color
+
+  .footer-info
+    padding: 20px 0
+    min-width: 600px
+    float: left
+
+    .footer-title
+      font-size: $large
+      color: $light-color
+
+      &:before
+        content: '/ '
+        color: $main-color
+
+    .footer-pargph
+      color: $light-color
+      letter-spacing: $space
+      font-size: $small
+
+      i
+        color: $light-color
+        font-size: $small
+
+  .copyright
+    color: $light-color
+    background-color: darken($dark-color, 10%)
+    padding: 30px
+    width: 100%
+    font-size: $small
+    text-align: center
+
+    i
+      font-size: $small
+      color: $light-color
+
+@media (max-width: 620px)
+  .footer-box
+
+    .footer-info
+      text-align: center
+      min-width: 100%
+
+      .footer-title
+        font-size: $medium
+
+      .footer-pargph
+        font-size: $xs

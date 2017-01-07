@@ -1,0 +1,79 @@
+nav
+  width: 100%
+  z-index: 1024
+  margin: 0px auto
+  height: 55px
+  background: $light-color
+  position: relative
+  
+  .hamburger
+    display: none
+    margin: 0 20px
+    line-height: 52px
+    font-size: 25px
+    float: right
+    text-decoration: none
+    color: #454552
+
+    &:hover
+      cursor: pointer
+
+  .logo
+    text-shadow: 2px 2px $dark-color
+    color: $main-color
+    line-height: 50px
+    font-size: 40px
+    font-weight: 700
+    margin-left: 50px
+    font-family: 'Indie Flower', cursive
+    letter-spacing: $space
+    
+  .menu
+    line-height: 50px
+    padding: 0
+    margin: 0
+    float: right
+    margin-right: 50px
+    z-index: 1204
+    
+    .link
+      padding: 0
+      margin: 0 35px
+      display: inline-block
+      position: relative
+      
+      a
+        letter-spacing: $space
+        color: $dark-color
+        display: block
+      
+      &:hover
+        border-bottom: 2px solid $main-color
+
+@media screen and (max-width: 820px)
+  nav
+    .hamburger
+      display: block
+      
+    .logo
+      margin-left: 5px
+
+    .menu
+      position: absolute
+      top: 100%
+      bottom: 0
+      left: 0
+      right: 0
+      width: 100%
+      display: none
+      
+      .link
+        border: 2px solid $light-color
+        background: $light-color
+        padding: 0
+        margin: 0
+        width: 100%
+        text-align: center
+      
+      &.is-open
+        display: block

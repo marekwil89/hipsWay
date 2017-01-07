@@ -1,0 +1,53 @@
+.subscribe
+  display: flex
+  justify-content: center
+  align-items: center
+  min-height: 100vh
+
+  .subscribe-form
+    margin: $small 0
+    width: 500px
+    background: rgba($light-color, 0.9)
+    padding: 20px
+    border-radius: 10px
+    text-align: center
+
+    .subscribe-title
+      font-size: $large
+      color: $dark-color
+
+      &:before
+        content: '/ '
+        color: $main-color
+
+    .subscribe-input
+      background: none
+      transition: 0.3s all
+      padding: 7px
+      font-size: $small
+      color: $light-color
+      margin-bottom: 50px
+      width: 100%
+      display: block
+      border-top: none
+      border-right: none
+      border-left: none
+      border-bottom: 2px solid $dark-color
+      color: $dark-color
+
+      &:focus
+        color: $dark-color
+        outline: 0
+        border-bottom: 2px solid $main-color
+
+
+@media screen and (max-width: 650px)
+  .subscribe
+    min-height: 60vh
+    .subscribe-form
+      width: 100%
+      border-radius: 0
+      .subscribe-input
+        font-size: $xs
+      .subscribe-title
+        font-size: $medium

@@ -16,38 +16,7 @@ $(document).ready(function(){
     var wScroll = $(this).scrollTop();
     showItems(wScroll, '.projects', '.project')
     showItems(wScroll, '.icons', '.icon-box')
-
-    if(wScroll > $('.stats').offset().top - ($(window).height()/1.9)){
-      countMe('.count1', '+');
-      countMe('.count2', '/160');
-      countMe('.count3');
-      countMe('.count4', '+');
-      startCount = false;
-    }
   })
-
-
-  function countMe(element, add){
-    
-    if(startCount == true){
-      var plus = '';
-
-       if(add){
-        plus = add;
-       }
-
-       var finish = $(element).attr('finish');
-       var start = $(element).attr('start');
-       var speed = $(element).attr('speed');
-       var count = setInterval(function(){
-        start++;
-        if(start == finish){
-          clearInterval(count);
-        }
-        $(element).html(start + plus);
-      }, speed);
-    }
-  }
 
   function toggleMenu(){
       $(".menu").toggleClass("is-open")
@@ -81,9 +50,6 @@ $(document).ready(function(){
       })
     }
   }
-
-
-
 
   function anchorScroll(){
     $('a[href*="#"]:not([href="#"])').click(function(){

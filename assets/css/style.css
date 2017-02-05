@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext");
 .footer-box {
   display: -webkit-box;
   display: -webkit-flex;
@@ -574,22 +573,14 @@ nav {
 * {
   box-sizing: border-box;
   color: #252c41;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 1.3px; }
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 1.2px; }
 
 body {
   margin: 0; }
 
 .clear-both {
   clear: both; }
-
-.line-horizontal {
-  z-index: 99;
-  width: 50px;
-  height: 5px;
-  border-radius: 10px;
-  background-color: #252c41;
-  margin: 10px auto; }
 
 .btn {
   z-index: 99;

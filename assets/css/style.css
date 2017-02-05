@@ -101,7 +101,8 @@
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 100vh; }
+  min-height: 100vh;
+  overflow: hidden; }
   .icons .icons-title {
     font-size: 35px;
     color: #252c41; }
@@ -129,16 +130,6 @@
     margin: 0;
     padding: 0;
     position: relative; }
-    .icons .timeline:before {
-      content: "";
-      position: absolute;
-      left: 49%;
-      background: #999999;
-      width: 3px;
-      min-height: 130vh;
-      -webkit-transform: translateX(50%);
-          -ms-transform: translateX(50%);
-              transform: translateX(50%); }
     .icons .timeline li {
       margin: 40px 0;
       list-style: none;
@@ -146,6 +137,17 @@
       height: 200px;
       position: relative;
       cursor: pointer; }
+      .icons .timeline li:first-child:before {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        left: 49%;
+        background: #999999;
+        width: 3px;
+        min-height: 200vh;
+        -webkit-transform: translateX(50%);
+            -ms-transform: translateX(50%);
+                transform: translateX(50%); }
       .icons .timeline li figure {
         padding: 10px;
         margin: 0;
@@ -179,8 +181,6 @@
           font-size: 18px; }
 
 @media screen and (max-width: 830px) {
-  .icons .timeline:before {
-    height: 100vh; }
   .icons .timeline li {
     width: 50px; }
     .icons .timeline li figure {

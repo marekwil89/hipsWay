@@ -4,6 +4,7 @@
   align-items: center
   flex-direction: column
   min-height: 100vh
+  overflow: hidden
 
   .icons-title
     font-size: $large
@@ -22,15 +23,6 @@
     padding: 0
     position: relative
 
-    &:before
-      content: ''
-      position: absolute
-      left: 49%
-      background: $gray-color
-      width: 3px
-      min-height: 130vh
-      transform: translateX(50%)
-
     li
       margin: 40px 0
       list-style: none
@@ -39,6 +31,17 @@
       position: relative
       cursor: pointer
   
+      &:first-child
+        &:before
+          content: ''
+          z-index: -1
+          position: absolute
+          left: 49%
+          background: $gray-color
+          width: 3px
+          min-height: 200vh
+          transform: translateX(50%)
+
       figure
         padding: 10px
         margin: 0
@@ -78,9 +81,6 @@
 @media screen and (max-width: 830px)
   .icons
     .timeline
-
-      &:before
-        height: 100vh
 
       li
         width: 50px

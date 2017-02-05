@@ -23,7 +23,6 @@
     display: flex
     justify-content: center
     align-items: center
-    transition: 0.3s all
     
     &.is-showing
       opacity: 1
@@ -36,11 +35,13 @@
       bottom: 0
       left: 0
       background: rgba($main-color, 0.7)
+      transition: 0.3s all
 
     .fa
       opacity: 0
       z-index: 120
       color: $light-color
+      transition: 0.3s all
 
     &:hover
       .overlay, .fa

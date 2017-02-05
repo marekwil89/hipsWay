@@ -2,12 +2,12 @@
   display: flex
   justify-content: center
   align-items: center
-  min-height: 100vh
+  min-height: 60vh
 
   .subscribe-form
-    margin: $small 0
+    margin: 20px 0
     width: 500px
-    background: rgba($light-color, 0.9)
+    background: rgba($light-color, 0.8)
     padding: 20px
     border-radius: 10px
     text-align: center
@@ -39,15 +39,3 @@
         color: $dark-color
         outline: 0
         border-bottom: 2px solid $main-color
-
-
-@media screen and (max-width: 650px)
-  .subscribe
-    min-height: 60vh
-    .subscribe-form
-      width: 100%
-      border-radius: 0
-      .subscribe-input
-        font-size: $xs
-      .subscribe-title
-        font-size: $medium

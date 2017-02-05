@@ -1,0 +1,110 @@
+.icons
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  min-height: 100vh
+
+  .icons-title
+    font-size: $large
+    color: $dark-color
+
+    &:before
+      content: '/ '
+      color: $main-color
+
+  .timeline
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    margin: 0
+    padding: 0
+    position: relative
+
+    &:before
+      content: ''
+      position: absolute
+      left: 49%
+      background: $gray-color
+      width: 3px
+      min-height: 130vh
+      transform: translateX(50%)
+
+    li
+      margin: 40px 0
+      list-style: none
+      width: 200px
+      height: 200px
+      position: relative
+      cursor: pointer
+  
+      figure
+        padding: 10px
+        margin: 0
+        transition: 0.3s all
+        img
+          width: 100%
+
+        &:hover
+          transform: scale(1.1)
+
+      .panel
+        width: 300px
+        position: absolute
+        height: 200px
+        padding: 30px 15px
+
+        &.right
+          text-align: left
+          top: 0
+          bottom: 0
+          left: 100%
+
+        &.left
+          text-align: right
+          top: 0
+          bottom: 0
+          right: 100%
+
+        .panel-date
+          font-weight: 700
+          color: $dark-color
+
+        .panel-descr
+          font-size: $small
+
+
+@media screen and (max-width: 830px)
+  .icons
+    .timeline
+
+      &:before
+        height: 100vh
+
+      li
+        width: 50px
+        figure
+          padding
+          width: 50px
+          height: 200px
+          background: $dark-color
+
+          img
+            display: none
+
+@media screen and (max-width: 677px)
+  .icons
+    .timeline
+      li
+        border: 1px solid lighten($gray-color, 15%)
+        width: 100%
+        background: $light-color
+        figure
+          display: none
+
+        .panel
+          position: static
+
+
+

@@ -10,10 +10,10 @@ nav
     display: none
     margin: 0 20px
     line-height: 52px
-    font-size: 25px
+    font-size: $large
     float: right
     text-decoration: none
-    color: #454552
+    color: $dark-color
 
     &:hover
       cursor: pointer
@@ -25,8 +25,7 @@ nav
     font-size: 40px
     font-weight: 700
     margin-left: 50px
-    font-family: 'Indie Flower', cursive
-    letter-spacing: $space
+    text-decoration: none
     
   .menu
     line-height: 50px
@@ -43,14 +42,15 @@ nav
       position: relative
       
       a
-        letter-spacing: $space
+  
         color: $dark-color
         display: block
+        text-decoration: none
       
       &:hover
         border-bottom: 2px solid $main-color
 
-@media screen and (max-width: 820px)
+@media (max-width: 820px)
   nav
     .hamburger
       display: block

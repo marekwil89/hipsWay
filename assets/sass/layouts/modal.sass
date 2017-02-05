@@ -15,9 +15,9 @@
     animation-duration: 1s
 
   .modal-title
-    letter-spacing: $space
-    font-size: $large
     text-align: center
+    font-size: $large
+    color: $dark-color
 
     &:before
       content: '/ '
@@ -26,8 +26,6 @@
   .modal-container
     position: relative
     background: $light-color
-    background-image: url('../images/vector.png')
-    background-size: cover
     width: 800px
     margin: 0px auto
     padding: 0px 10px
@@ -36,7 +34,7 @@
     .close
       position: absolute
       top: 3px
-      right: 3px
+      left: 3px
 
       &:hover
         cursor: pointer
@@ -53,29 +51,19 @@
         box-shadow: 10px 10px 5px $gray-color
 
     .modal-date
-      font-size: $small
       font-weight: 700
       color: $dark-color
-      letter-spacing: $space
 
     .modal-descr
-      letter-spacing: $space
       font-size: $small
-      word-break: break-all
-      line-height: 120%
-      
       text-align: justify
+      word-break: break-all
 
       &:before
         content: '...'
-      
-@media screen and (max-width: 600px)
 
+@media screen and (max-width: 470px)
   .modal
-    .modal-title
-      font-size: $medium
-      
     .modal-container
       figure
-        width: 90%
-      
+        display: none

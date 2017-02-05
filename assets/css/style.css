@@ -77,12 +77,12 @@
     text-shadow: 4px 3px #252c41;
     margin: 20px 0px;
     z-index: 120;
-    font-size: 150px;
+    font-size: 140px;
     color: #ef5285; }
 
 @media (max-width: 625px) {
   .header .logo {
-    font-size: 70px; } }
+    font-size: 60px; } }
 .icons {
   display: -webkit-box;
   display: -webkit-flex;

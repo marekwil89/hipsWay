@@ -577,6 +577,8 @@ nav {
       display: block;
       width: 100%;
       padding: 0; }
+      .panels article .panel.white-bg {
+        background: transparent; }
       .panels article .panel .plus-size {
         display: none; }
       .panels article .panel .panel-info {
@@ -626,7 +628,6 @@ nav {
         border-bottom: 2px solid #ef5285; }
 
 .slider {
-  background: #FAFAF5;
   width: 1280px;
   margin: 50px auto;
   overflow: hidden;

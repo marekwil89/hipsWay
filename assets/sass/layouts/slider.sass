@@ -1,0 +1,73 @@
+.slider
+  background: #FAFAF5
+  width: 1280px
+  margin: 50px auto
+  overflow: hidden
+  min-height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+
+  .sliders-box
+    width: 300%
+    display: flex
+
+    .slide
+      animation: slider 20s infinite
+      width: 33%
+      display: flex
+      transition: 0.3s all
+
+      figure
+        width: 50%
+        position: relative
+        overflow: hidden
+  
+        .slide-back
+          width: 100%
+
+        .slide-front
+          transition: 0.3s all
+          position: absolute
+          width: 100%
+          top: 0
+          left: 0
+          animation: item-move 3s infinite
+
+      aside
+        width: 50%
+        display: flex
+        padding: 50px
+        justify-content: center
+        align-items: center
+        flex-direction: column
+
+        h4
+          font-size: $large
+          margin-bottom: 20px
+
+        p
+          font-size: $medium
+
+@media screen and (max-width: 1300px)
+  .slider
+    width: 100%
+
+@media screen and (max-width: 1000px)
+  .slider
+    .sliders-box
+      .slide
+        display: block
+        aside
+          width: 100%
+
+        figure
+          display: none
+
+@media screen and (max-width: 500px)
+  .slider
+    .sliders-box
+      .slide
+        aside
+          padding: 20px

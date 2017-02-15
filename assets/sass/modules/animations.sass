@@ -1,8 +1,10 @@
 @keyframes change-hue
   0%
     filter: hue-rotate(0deg)
+    
   50%
     filter: hue-rotate(200deg)
+
   100%
     filter: hue-rotate(0deg)
 
@@ -11,6 +13,7 @@
     opacity: 0  
     right: -900px
     background: rgba($gray-color, 0.3)
+
   50%
     right: 0px
     left: 0px
@@ -21,3 +24,40 @@
     right: 0px
     left: 0px
     background: rgba($black-color, 0.9)
+
+@keyframes slider
+  0%, 30%
+    transform: translateX(100%)
+
+  33%, 63%
+    transform: translateX(0)
+
+  66%, 97%
+    transform: translateX(-100%)
+
+  100%
+    transform: translateX(100%)
+
+@keyframes item-move
+  0%
+    top: -10px
+    left: -10px
+
+  25%
+    top: 10px
+    left: -10px
+
+  50%
+    top: -10px
+    left: 10px
+
+  75%
+    top: 10px
+    left: 10px
+
+@keyframes draw-line
+  0%
+    width: 0%
+
+  100%
+    width: 80%

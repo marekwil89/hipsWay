@@ -1,7 +1,6 @@
 $(document).ready(function(){
   $(window).scroll(function(){
     var wScroll = $(this).scrollTop();
-    scrollShowItems(wScroll, '.icons', '.icon-box')
     scrollRotateItem(wScroll, '.promo', '.flare2')
   })
 
@@ -14,15 +13,4 @@ $(document).ready(function(){
       });
     }
   }
-
-  function scrollShowItems(wScroll, section, objectToMove){
-    if(wScroll > $(section).offset().top - ($(window).height()/2)){
-      $(objectToMove).each(function(i){
-        setTimeout(function(){
-          $(objectToMove).eq(i).addClass('is-showing')
-        }, 300 * i)
-      })
-    }
-  }
-
 })

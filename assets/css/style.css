@@ -418,7 +418,7 @@ nav {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
   .projects .project {
-    opacity: 0;
+    opacity: 1;
     position: relative;
     -webkit-box-flex: 1;
     -webkit-flex: 1 0 25%;
